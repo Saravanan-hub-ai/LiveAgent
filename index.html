@@ -1,8 +1,27 @@
 <html>
 <body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+<h1>Live Agent Website</h1>
+<p>ATHER</p>
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DBg000002Tcta',
+				'Messaging_Web',
+				'https://atherenergy--atheruat.sandbox.my.site.com/ESWMessagingWeb1767708331614',
+				{
+					scrt2URL: 'https://atherenergy--atheruat.sandbox.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://atherenergy--atheruat.sandbox.my.site.com/ESWMessagingWeb1767708331614/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 
 </body>
 </html>
